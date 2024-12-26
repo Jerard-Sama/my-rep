@@ -1,0 +1,6 @@
+## Dependencies foe dynamic_transparency.sh
+
+xwininfo -------> is a dependency relared to xorg. It fetches the IDs of the windows.
+xprop -------> also related to xorg. It determines the active window.
+
+##

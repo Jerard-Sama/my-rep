@@ -1,0 +1,15 @@
+Sets the Target Directory:
+
+    Assigns the path to TARGET_DIR.
+
+Populates VALUES:
+
+    Uses ls to list files in the directory and stores them in the VALUES array.
+
+Displays a Menu:
+
+    Uses dmenu to present the list of wallpapers for selection.
+
+Sets the Wallpaper:
+
+    Uses hsetroot to apply the selected wallpaper.

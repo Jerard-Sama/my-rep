@@ -1,0 +1,53 @@
+User Inputs:
+
+    The script now takes two arguments:
+        GLOBAL_TRANSPARENCY_PERCENT: Transparency for all windows.
+        FOCUSED_TRANSPARENCY_PERCENT: Transparency for the currently focused window.
+
+Transparency Calculation:
+
+    A reusable function, calculate_transparency, computes the hex transparency value for a given percentage.
+
+Identify All Windows:
+
+    Uses xwininfo -root -tree to fetch all window IDs (XID).
+    Extracts window IDs using awk.
+
+Focused Window:
+
+    Determines the currently active window using _NET_ACTIVE_WINDOW (via xprop).
+
+Apply Transparency:
+
+    Iterates through all windows.
+    Applies FOCUSED_TRANSPARENCY_HEX to the focused window.
+    Applies GLOBAL_TRANSPARENCY_HEX to all other windows.
+
+How It Works
+
+    Transparency Calculation:
+        calculate_transparency_hex converts transparency percentages into _NET_WM_WINDOW_OPACITY hexadecimal values.
+
+    Focus Detection:
+        The focused window is detected using xprop -root and the _NET_ACTIVE_WINDOW property.
+
+    Apply Transparency:
+        For each window (retrieved using xwininfo -root -tree):
+            The currently focused window gets the FOCUSED_TRANSPARENCY value.
+            All other windows get the GLOBAL_TRANSPARENCY value.
+
+    Event Loop:
+        Runs continuously, checking the focused window every 0.5 seconds, and applies the appropriate transparency values
+
+Filter for st Terminals:
+
+    The is_st_terminal function uses xprop to check if the window’s class contains st.
+    This ensures only st terminals are subjected to the transparency rules.
+
+Skip Non-st Windows:
+
+    Windows like the dwm status bar or other applications are ignored.
+
+Transparency Logic:
+
+    Transparency is applied only if the window is verified as an st terminal.

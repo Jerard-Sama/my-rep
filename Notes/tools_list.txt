@@ -1,0 +1,34 @@
+speaker driver
+microphone driver
+network driver
+bluetooth driver
+camera driver
+✓dwm 
+✓st
+✓fonts: dejavu-sansmono;bitstream-sansmono
+✓sxhkd
+libreoffice******
+neomutt
+✓btop+htop
+✓firefox
+emacs
+pass
+anki
+oboeta
+✓nsxiv
+gimp
+mpv
+kdenlive******
+tmux
+herbe
+✓zathura + mupdf
+yt-dlp
+ffmpeg (d)
+✓dmenu
+sent
+✓slock
+✓slstatues 
+✓xorg
+✓lf
+✓fzf
+✓fzy

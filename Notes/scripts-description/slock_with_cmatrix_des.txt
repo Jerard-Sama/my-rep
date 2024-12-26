@@ -1,0 +1,35 @@
+Explanation
+
+    Run cmatrix:
+        The cmatrix -b & command starts cmatrix in the background.
+        The & allows the script to continue without waiting for cmatrix to finish.
+
+    Store the Process ID:
+        $! stores the Process ID (PID) of the last background command, i.e., cmatrix.
+
+    Run slock:
+        The script launches slock, which will lock the screen.
+
+    Kill cmatrix:
+        When slock exits (upon unlocking the screen), the script kills the cmatrix process using its PID.
+
+Adding the reset Command:
+
+    The reset command resets the terminal to its default state, restoring any altered modes caused by cmatrix or other programs.
+    This ensures the terminal can properly display input and output after unlocking.
+
+Gracefully Killing cmatrix:
+
+    The kill $CMATRIX_PID command terminates cmatrix after slock unlocks.
+
+Save Shell History (history -a):
+
+    The history -a command appends the current shell session's history to the .bash_history (or equivalent) file.
+
+Reset Terminal:
+
+    The reset command restores the terminal's state, clearing the screen but also resetting the terminal environment.
+
+Reload Shell History (history -r):
+
+    The history -r command reloads the history from the history file, including the commands saved by history -a.

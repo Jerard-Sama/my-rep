@@ -1,0 +1,6 @@
+## fonts
+
+dwm.font : DejaVuSansMono : size=9 
+st.font : DejaVuSansMono : size=10 
+dmenu.font : DejaVuSansMono : size=12
+

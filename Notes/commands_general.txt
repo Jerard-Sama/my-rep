@@ -1,0 +1,5 @@
+lf ------> file manager
+find . -type f | fzy ------> fuzzy finder
+hsetroot -fill $image_path/image.png -----> set wallpaper
+nsxiv -t directory -------> views images inside directory in thumbnail mode
+chmod +x script.sh -------> makes script executable
