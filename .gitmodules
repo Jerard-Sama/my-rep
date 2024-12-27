@@ -1,0 +1,18 @@
+[submodule "src/dmenu"]
+	path = src/dmenu
+	url = https://github.com/Jerard-Sama/my-rep/tree/main
+[submodule "src/dwm"]
+	path = src/dwm
+	url = https://github.com/Jerard-Sama/my-rep/tree/main
+[submodule "src/nsxiv"]
+	path = src/nsxiv
+	url = https://github.com/Jerard-Sama/my-rep/tree/main
+[submodule "src/slock"]
+	path = src/slock
+	url = https://github.com/Jerard-Sama/my-rep/tree/main
+[submodule "src/slstatus"]
+	path = src/slstatus
+	url = https://github.com/Jerard-Sama/my-rep/tree/main
+[submodule "src/st"]
+	path = src/st
+	url = https://github.com/Jerard-Sama/my-rep/tree/main
